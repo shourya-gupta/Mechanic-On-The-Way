@@ -11,14 +11,14 @@
     	  echo '<script>var r=confirm("Invalid Username or Password!!!");
 				if(r==true || r==false)
 				{
-					window.location.href = "login.php";
+					window.location.href = "login.html";
 				}
 				</script>';
 		    $flag=1;
     }
   	if($flag==0)
   	{
-        header("Location:index_user.php");
+        header("Location:index_user.html");
     }
     mysqli_close($conn);
 ?>
