@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign up</title>
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<script>
+  function phoneNumberValidation(phoneNumber)
+  {
+    var phoneno = /^\d{10}$/;
+    if(phoneNumber.match(phoneno))
+    {
+      return true;
+    }
+    else
+    {
+      alert("Enter valid 10 digit number like this 9876543210.");
+      return false;
+    }
+  }
+  function test_pass(password)
+  {
+      if(password.match(/[a-z]/g) && password.match(/[A-Z]/g) && password.match(/[0-9]/g) && password.match(/[^a-zA-Z\d]/g) && password.length >= 8)
+      {
+       return true;
+      }
+      else
+      {
+        alert("Password must have atleast 1 Uppercase, 1 Lowercase, 1 Digit, 1 Special Character and a minimum of 8 characters!!!")
+        return false;
+      }
+  }
+  function isNumberKey(evt)
+  {
+      var charCode = (evt.which) ? evt.which : event.keyCode;
+      if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+      {
+        alert("Enter Number");
+        return false;
+      }
+      return true;
+  }
+  function allLetters(evt)
+  {
+      evt = (evt) ? evt : event;
+      var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+      if (charCode > 31 && (charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122))
+      {
+        alert("Enter letters only.");
+        return false;
+      }
+      return true;
+  }
+
+  function checklength()
+  {
+    var password = document.getElementById('password').value;
+    return true;
+  }
+  function ValidateEmail(mail)
+  {
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(mail.match(mailformat))
+    {
+      return true;
+    }
+    else
+    {
+      alert("You have entered an invalid email address!");
+      return false;
+    }
+  }
+  function validate()
+  {
+    var valid = true;
+    var email = document.getElementById('email').value;
+    var pass = document.getElementById('password').value;
+    var phone = document.getElementById('mobileno').value;
+    var cpass = document.getElementById('conpassword').value;
+    if(phone!='')
+    {
+      valid = phoneNumberValidation(phone);
+    }
+    if(email!='')
+    {
+      valid = ValidateEmail(email);
+    }
+    if(password!='')
+    {
+      valid = test_pass(pass);
+    }
+    if(pass != cpass)
+    {
+      valid = false;
+      alert("Paswords don't match!!!");
+    }
+    if(valid==false)
+    {
+      return false;
+    }
+    else
+    {
+      return true;
+    }
+  }
+</script>
+</head>
+<body>
+  <div class="container">
+    <section id="content">
+      <form name="myForm" action="submit.php" method="post" onsubmit="return validate();">
+        <h1>Sign Up!</h1>
+        <div>
+          <input type="text" placeholder="Full name" id="fullname" name="fullname" onkeypress="return allLetters(event)" required>
+        </div>
+        <div>
+          <input type="text" placeholder="Mobile no." id="mobileno" name="mobileno" onkeypress="return isNumberKey(event)" required>
+        </div>
+        <div>
+          <input type="text" placeholder="Address"  id="address" name="address" required>
+        </div>
+        <div>
+          <input type="text" placeholder="Email" id="email" name="email" required>
+        </div>
+        <div>
+          <input type="password" placeholder="Password" id="password" name="password" required>
+        </div>
+        <div>
+          <input type="password" placeholder="Confirm password" id="conpassword" name="conpassword" required>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary" id="submit">Register</button>
+        </div>
+      </form>
+    </section><!-- content -->
+  </div><!-- container -->
+</body>
+</html>
