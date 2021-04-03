@@ -69,6 +69,14 @@ div.contact, textarea, input {
   margin: 0 0 1em 0;
   padding: 0 2.5em;
 }
+.row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  background-color:#DD4E30;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  text-align:center;
+}
 .row.body {
   padding: .5em 2.5em 1em;
 }
@@ -94,6 +102,9 @@ div.contact-elements p.left {float:left;}
     box-shadow: 1px 1px 4px #ccc;
     -moz-box-shadow: 1px 1px 4px #ccc;
     -webkit-box-shadow: 1px 1px 4px #ccc;
+}
+.btn:hover {
+  background-color: #bfbfbf;
 }
 .btn.btn-submit {
   background-color: #DD4E30 ;
