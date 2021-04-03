@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forgot_3</title>
+<link rel="stylesheet" type="text/css" href="style5.css" />
+<script>
+  function validatePassword(){
+    if(password.value != conpassword.value) {
+      alert("Password does not match,Please retry!");
+    } else {
+      alert("Password matched");
+    }
+  }
+  </script>
+</head>
+<body>
+<div class="container">
+  <section id="content">
+    <form action="" onsubmit="validatePassword()" method="post">
+      <h1>Reset password</h1>
+      <div>
+        <input type="password" placeholder="New password" required="" id="password" />
+      </div>
+      <div>
+        <input type="password" placeholder="Confirm password" required="" id="conpassword" />
+      </div>
+      <div>
+        <input type="submit" formaction="forgot4.html" value="Submit" />
+      </div>
+    </form><!-- form -->
+    
+  </section><!-- content -->
+</div><!-- container -->
+</body>
+</html>
