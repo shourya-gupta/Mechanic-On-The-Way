@@ -1,0 +1,21 @@
+div::after {
+  content: attr(data-mobile);
+}
+
+@media only screen and (min-width: 600px) {
+  div::after {
+    content: attr(data-desktop);
+  }
+}
+body {
+  background:rgba(18,18,26,1);
+  color: #059;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: -0.1em;
+  line-height: 1;
+  padding: 40vh 20vw;
+  text-align: center;
+  word-spacing: 0.2em;
+}
