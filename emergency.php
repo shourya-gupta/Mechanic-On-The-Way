@@ -5,7 +5,19 @@
   <title>Mechanic On The Way</title>
   <link rel="stylesheet" href="./style-emergency.css">
   <script>
-   
+    function phoneNumberValidation(phoneNumber)
+    {
+      var phoneno = /^\d{10}$/;
+      if(phoneNumber.match(phoneno))
+      {
+        return true;
+      }
+      else
+      {
+        alert("Enter valid 10 digit number like this 9876543210.");
+        return false;
+      }
+    }
   function isNumberKey(evt)
     {
         var charCode = (evt.which) ? evt.which : event.keyCode;
