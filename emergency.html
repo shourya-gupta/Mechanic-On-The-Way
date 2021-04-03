@@ -2,9 +2,9 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Mechanic On The Way</title>
+  <title>emergency</title>
   <link rel="stylesheet" href="./style-emergency.css">
-  <script>
+  <script>    
     function phoneNumberValidation(phoneNumber)
     {
       var phoneno = /^\d{10}$/;
@@ -18,7 +18,7 @@
         return false;
       }
     }
-  function isNumberKey(evt)
+    function isNumberKey(evt)
     {
         var charCode = (evt.which) ? evt.which : event.keyCode;
         if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
@@ -27,7 +27,8 @@
           return false;
         }
         return true;
-    }function validate()
+    }
+    function validate()
     {
       var valid = true;
       var phone = document.getElementById('phone').value;
@@ -47,8 +48,12 @@
 </script>
 </head>
 <body>
-
-
+<!-- partial:index.partial.html -->
+<!---link css/js/php:
+css/contact.css
+js/contact.js
+php/contact_me.php
+--->
 <div class="contact container shadow" id="contact_form">
   <div class="contact row header">
     <h2>EMERGENCY</h2>
@@ -73,10 +78,15 @@
         <div class="center-btn" style="position:relevant; height:5vh;">
           <li>
             <label for="email">ANY LANDMARK?</label>
-            <input type="text" name="landmark" id="landmark" class="input-field" placeholder="Behind ABC school" />
+            <input type="text" name="landmark" id="landmark" class="input-field" placeholder="Behind ABC school" /> 
           </li>
         </div>
-
+        <br><br>
+        <div  class="center-btn">
+        	<li>
+        		<iframe src="gp.html" width=400px height="175px"></iframe>
+        	</li>
+        </div>
         <li>
           <div class="contact divider"></div>
         </li>
@@ -94,10 +104,8 @@
   </div>
 </form>
 </div>
-
 </!---contact-form--->
-
+<!-- partial -->
   <script src='https://cdnjscloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./emergency.js"></script>
-
 </body>
 </html>
