@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanic on the way</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'><link rel="stylesheet" href="general-style4.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="background"></div>
+<div class="profile-card">
+  <div class="cover"></div>
+  <div class="profile">
+    <div class="pic"></div>
+    <div class="above-fold">
+      <div class="name">
+        Mr. Blank 
+      </div>
+      <div class="role">
+        Mechanic
+      </div>
+      <div class="location">
+        <i class="fas fa-map-marker-alt"></i>Indore, India
+      </div>
+      <div class="row">
+        <a href="general.php">
+          <div class="button">
+          Reject
+        </div></a>
+        <a href="trans1.html"><div class="button">
+          Accept
+        </div></a>
+      </div>
+      <div id="expand-button">
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </div>
+    <div class="below-fold">
+      <div class="about">
+        <h3>
+          About
+        </h3>
+        <p>
+          Hi, I am from Indore. I have an experience of 2-4 years in Maruti as a senior mechanic. I had 3 star rating for about 3 years. I am specialised mechanical part.
+        </p>
+      </div>
+      <div class="row stats">
+        <div class="stat">
+          <label>Experience</label>
+          <div class="num">
+            2-4 years
+          </div>
+        </div>
+        <div class="stat">
+          <label>Rating in last month</label>
+          <div class="num">
+            3.5
+          </div>
+        </div>
+        <div class="stat">
+          <label>Services delivered</label>
+          <div class="num">
+            104
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script>
+    $('#expand-button').click(function() {
+  $('.profile-card').toggleClass('expand');
+})
+  </script>
+
+</body>
+</html>
