@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanic On The Way</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<page id="home">
+  <span class="pagetag"></span>
+  <section class="header">
+    <a href="index.php"><img alt="Mech"src="logout.png" width="50px" height="50px" style="float:right; margin-right:10em;"></a>
+    <br>
+    <div>
+      <h2><span>W</span><span>ELCOME</span></h2>
+      <br></br>
+    <h5 style="color:white">MECHANIC ON THE WAY</h5>
+    </div>
+      <a href="index_user.php"><img alt="Mech"src="logo-pro.png" width="200px" height="200px" style="float:right;"></a>
+  </section>
+  <section id="grid_wrapper" class="init">
+        <card>
+      <div>
+        <span><a href="emergency.php" style='color: #aaaaaf; text-decoration: none;'>URGENT MECHANIC NEED</a></span>
+      </div>
+    </card>
+    <card>
+      <div>
+        <span><a href="general.php" style='color: #aaaaaf; text-decoration: none;'>GENERAL MECHANIC</a></span>
+      </div>
+    </card>
+    <card>
+      <div>
+        <span><a href="automobile.html" style='color: #aaaaaf; text-decoration: none;'>AUTOMOBILE PARTS</a></span>
+      </div>
+      </card>
+    <card>
+
+      <div>
+        <span><a href="about.html" style="color: #aaaaaf; text-decoration: none;">ABOUT US</a></span>
+      </div>
+    </card>
+    <card>
+      <div>
+        <span><a href="contactus.html" style="color: #aaaaaf; text-decoration: none;">CONTACT US</a></span>
+      </div>
+    </card>
+    <card>
+      <div>
+        <span><a href="login.php" style="color: #aaaaaf; text-decoration: none;">LOGIN</a></span>
+      </div>
+    </card>
+  </section>
+  <div style="margin-right:12em;"><iframe src="customer/customer_reviews.html" width=100% height="650px"></iframe></div>
+</page>
+<div id="footer">
+  <span style="display:block;font-size:0.9em;line-height:55px;">
+  		<span style="display:inline-block;">&copy; <span style="font-family:'Titillium Web'; font-size:24px; font-weight:900;letter-spacing:0.06em">Made by-</span> Team Phoenix</span></span>
+  <span style="display:block;font-size:0.7em;line-height:30px;margin-top:-25px;color:rgba(255,255,255,0.15)">&lang;  &rang;<span>
+  	<br><br><br><br>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
