@@ -12,7 +12,7 @@
 
       if(mysqli_query($conn,$sql)){
       	echo "<h1 align='center'>REGISTERED SUCCESSFULLY!!!</h1>";
-      	header("Refresh:3; url=login_html.php",  true, 303);
+      	header("Refresh:3; url=login_check.html",  true, 303);
       }
       else{
       	echo "Error" . mysqli_error($conn);
